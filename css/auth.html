@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Ilya Minin">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?7685">
+	<link rel="stylesheet" type="text/css" href="style.css?615">
+    <link rel="stylesheet" href="libs/modal/modal.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,40&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <title>Авторизация</title>
+    
+    <title>Авторизация</title>
+</head>
+
+<body>
+<br>
+   <header style="padding-right: 600px; padding-left: -200px;" class="header">
+		<div class="container">
+			<nav style="padding-right: 100px;" class="header__nav nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="index1.html" class="nav__link">Главная</a></li>
+					<li class="nav__item"><a href="index.html" class="nav__link">Каталог</a></li>
+					<li class="nav__item"><a href="onas.html" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="auth.html" class="nav__link">Регистрация</a></li>
+					<li class="nav__item" id="username"  ><a  href="auth.html" class="nav__link"></a></li>
+				</ul>
+				<div class="header__cart cart" tabindex="0">
+					<div class="cart__text">
+						Корзина
+						<span class="cart__quantity">0</span>
+					</div>
+					<div class="cart-content">
+						<ul class="cart-content__list" data-simplebar>
+						</ul>
+						<div class="cart-content__bottom">
+							<div class="cart-content__fullprice">
+								<span>Итого:</span>
+								<span class="fullprice">568 789 ₽</span>
+							</div>
+							<button class="cart-content__btn btn" data-graph-path="modal" data-graph-animation="fadeInUp">Перейти в корзину</button>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+    <main>
+        <section>
+            <form id="auth-form" name="authForm" novalidate>
+                <label for="login">Имя</label>
+                <span id="login-error" class="error-message"></span>
+                <input type="text" id="login" name="login" pattern="^[А-Яа-я0-9]{4,10}$" placeholder="Введите Имя"
+                    required>
+
+					<label for="login">Фамилия</label>
+                <span id="login-error" class="error-message"></span>
+                <input type="text" id="login" name="login" pattern="^[А-Яа-я0-9]{4,10}$" placeholder="Введите фамилию"
+                    required>
+
+                <label for="date">Дата рождения:</label>
+                <span id="date-error" class="error-message"></span>
+                <input type="date" id="date" name="date" min="1950-01-01" max="2024-12-07" required>
+
+                <label for="">Для удобства вы можете добавить данные: </label>
+                <label for="gender"></label>
+                <span><input type="radio" id="male" name="gender" value="Мужской" required checked></span>
+                <span><input type="" id="female" name="gender" placeholder="Введите Паспорт" value="" required></span>
+                <span><input type="" id="female" name="gender"  placeholder="Введите СНИЛС"   value="" required></span>
+                <span><input type="" id="female" name="gender" placeholder="Введите ОМС" value="" required></span>
+                <span id="gender-error" class="error-message"></span>
+
+                <button type="submit" id="login-button">Войти</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socials-container">
+            <div class="contact-info">
+                <div class="social-links">
+                    
+                   
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

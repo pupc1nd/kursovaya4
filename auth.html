@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Ilya Minin">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?7685">
+	<link rel="stylesheet" type="text/css" href="style.css?615">
+    <link rel="stylesheet" href="libs/modal/modal.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,40&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <title>Авторизация</title>
+    
+    <title>Авторизация</title>
+</head>
+
+<body>
+<br>
+   <div class="bloc bgc-5491 l-bloc " id="bloc-0">
+	<div class="container bloc-sm bloc-no-padding-lg">
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-light row navbar-expand-md flex-column" role="navigation">
+					<div class="container-fluid flex-column">
+						<a class="navbar-brand mx-auto" href="./"><picture><source type="image/webp" srcset="img/12.webp"><img src="img/12.png" alt="logo" width="116" height="44"></picture></a>
+						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-15243">
+							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-45833 navbar-44110 navbar-35368 navbar-15243">
+								<ul class="site-navigation nav navbar-nav mx-auto justify-content-center">
+									<li class="nav-item">
+										<a href="index.html" class="nav-link">Главная</a>
+									</li>
+									<li class="nav-item">
+										<a href="onas/index.html" class="a-btn nav-link">О нас</a>
+									</li>
+									<li class="nav-item">
+										<a href="ЫЫ.html" id="username" class="a-btn nav-link"></a>
+										<li class="nav-item">
+										<a href="cart1.html" class="a-btn nav-link">каталог</a>
+									</li>
+									<li class="nav-item">
+										<a href="cart1.html" class="a-btn nav-link"></a>
+									</li>
+									<li class="nav-item">
+										<a href="auth.html" class="a-btn nav-link"> <img style="width: 20px; height: 20px;" src="img/auth.png" alt=""></a>
+									</li>
+									</li>
+								</ul>
+							</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+
+    <main>
+        <section>
+            <form id="auth-form" name="authForm" novalidate>
+                <label for="login">Имя</label>
+                <span id="login-error" class="error-message"></span>
+                <input type="text" id="login" name="login" pattern="^[А-Яа-я0-9]{4,10}$" placeholder="Введите Имя"
+                    required>
+
+					<label for="login">Фамилия</label>
+                <span id="login-error" class="error-message"></span>
+                <input type="text" id="login" name="login" pattern="^[А-Яа-я0-9]{4,10}$" placeholder="Введите фамилию"
+                    required>
+
+                <label for="date">Дата рождения:</label>
+                <span id="date-error" class="error-message"></span>
+                <input type="date" id="date" name="date" min="1950-01-01" max="2024-12-07" required>
+
+                <label for="">Для удобства вы можете добавить данные: </label>
+                <label for="gender"></label>
+                <span><input type="radio" id="male" name="gender" value="Мужской" required checked></span>
+                <span><input type="" id="female" name="gender" placeholder="Введите Паспорт" value="" required></span>
+                <span><input type="" id="female" name="gender"  placeholder="Введите СНИЛС"   value="" required></span>
+                <span><input type="" id="female" name="gender" placeholder="Введите ОМС" value="" required></span>
+                <span id="gender-error" class="error-message"></span>
+
+                <button type="submit" id="login-button">Войти</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socials-container">
+            <div class="contact-info">
+                <div class="social-links">
+                    
+                   
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+
+</html>
